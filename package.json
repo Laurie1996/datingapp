@@ -1,0 +1,19 @@
+{
+  "name": "nodeproject",
+  "version": "1.0.0",
+  "description": "map voor mijn backend vak",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laurie1996/datingapp.git"
+  },
+  "author": "Laurie B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laurie1996/datingapp/issues"
+  },
+  "homepage": "https://github.com/Laurie1996/datingapp#readme"
+}

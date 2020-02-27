@@ -1,13 +1,16 @@
-
-const express= require('express');
+const express = require('express');
 const app = express();
 const port = 8000;
 
-app.use('/static',express.static('public'));
+app.use('/static', express.static(__dirname + '/static'));
 
-app.get('/',(req, res)=> {
-  res.write('<p>Hello World!<p>');
-  res.end();
-});
+app.set('view engine', 'pug');
+
+app.set('views','views');
+
+app.get('/',(req,res)=> {
+
+  res.render('index.pug', {title:'Hey!', message: 'Hello There!'});
+})
 
 app.listen(port, () => console.log('Running my NOdeJS server at'));
